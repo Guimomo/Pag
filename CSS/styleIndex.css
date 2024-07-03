@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* -------------------------------------||------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* los dos puntos representa una pseudo clase */
+
+  --main-color: #f6e232;
+  --second-color: #2a2929;
+  --third-color: #f2f2f2;
+  --font-zise-main: 18px;
+  --max-width: 1400px;
+  --main-width: 1400px;
+  --nav-height: 70px;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+
+/* -------------------------------------||------------------------------------- */
+
+body {
+  background-color: var(--second-color);
+  color: var(--third-color);
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-zise-main);
+}
+
+header {
+  display: flex;
+  background: var(--main-color);
+  color: var(--second-color);
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  height: var(--nav-height);
+}
+
+.menuhorizontal {
+  display: flex;
+  align-items: center;
+}
+
+.enlaces {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.enlaces:hover {
+  color: var(--third-color);
+  background-color: var(--second-color);
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+/* -------------------------------------||------------------------------------- */
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+
+/* -------------------------------------||------------------------------------- */
+
+main {
+  display: flex;
+  /* background-color: #f6e232; */
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - var(--nav-height));
+}
+
+#Inicio {
+  display: flex;
+}
+
+#Inicio div {
+  display: flex;
+  justify-content: center;
+  width: var(--main-width);
+}
+
+.hpa {
+  display: flex;
+  flex-direction: column;
+}
+
+.hpa h1 {
+  font-size: 50px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 4rem;
+}
+
+.hpa h1::first-line {
+  color: var(--main-color);
+}
+
+/* .hpa h1::first-letter {
+  color: var(--main-color);
+} */
+
+.hpa p {
+  width: 300px;
+  margin: 20px 0;
+  font-size: var(--font-zise-main);
+}
+
+.hpa a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--second-color);
+  background-color: var(--main-color);
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.hpa a:hover {
+  background-color: var(--third-color);
+  color: var(--second-color);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.contenedor img {
+  display: inline-block;
+  width: 60vmax;
+}
