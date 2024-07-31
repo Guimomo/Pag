@@ -1,5 +1,5 @@
 header {
-    display: flex;
+    
     background: var(--main-color);
     color: var(--second-color);
     position: sticky;
@@ -7,7 +7,54 @@ header {
   
   }
   
-  header div {
+
+  
+  .nav{
+
+
+
+  }
+
+  .nav_contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+
+  .nav__figure{
+
+    
+  }
+
+  .nav__logo{
+
+  }
+
+  .nav__toggle{
+
+  }
+
+  .nav__input{
+
+  }
+
+  .nav_lista{
+    
+  }
+
+  .nav_item{
+
+  }
+
+  .nav_link{
+
+  }
+
+
+  /* -------------------------------- */
+  
+  /* header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,15 +62,10 @@ header {
   
   nav {
     height: var(--nav-height);
-  }
+  } */
+
   
-  .menuhorizontal {
-    display: flex;
-    align-items: center;
-  
-  }
-  
-  .enlaces {
+  /* .enlaces {
     text-decoration: none;
     color: inherit;
     font-weight: 700;
@@ -36,4 +78,4 @@ header {
     padding: 10px;
     border-radius: 50px;
     transition: 0.5s;
-  }
+  } */
