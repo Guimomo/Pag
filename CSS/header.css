@@ -4,6 +4,7 @@ header {
     color: var(--second-color);
     position: sticky;
     top: 0;
+    height: var(--nav-height);
   
   }
   
@@ -11,7 +12,7 @@ header {
   
   .nav{
 
-
+    
 
   }
 
@@ -19,8 +20,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    --transfor-menu-show: translate(-100%);
+    --icon-togle-menu: url("/assets/icons/close.svg");
+
+
+
+    height: var(--nav-height);
+    margin:0 16px;
+
+    /* Alinear elementos dentro del nav */
   
   }
+
+  .nav_contenedor:has(.nav__input:checked){
+
+    --transfor-menu-show: translate(0);
+    --icon-togle-menu: url("/assets/icons/close.svg");
+
+  }
+
+
 
   .nav__figure{
 
@@ -29,18 +48,67 @@ header {
 
   .nav__logo{
 
+    display: inline-block;
+
   }
 
   .nav__toggle{
+
+    /* toggle sera una palanca que condicione la aparicion del menu con un click */
+
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/icons/open.svg");
+    background-size: cover;
+    cursor: pointer;
+    
+  }
+
+  .nav__toggle:has(.nav__input:checked){
+
+    background-image: var(--icon-togle-menu);
 
   }
 
   .nav__input{
 
+    display: none;
+    /* ya no se ve el checkbox */
+
   }
 
   .nav_lista{
+
+    display:flex;
+    flex-direction: column;
+
+    background-color: var(--second-color);
+
+    position: fixed;
+
+    inset: 0;
+    /* con inset 0 se posicionara por encima de todo 
+    como un menu que se sobrepone en todo*/
+
+ 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* el gap separa elementos de una lista de mejor forma*/
+
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+
+    transition: all 0.5s;
+
+
+    top: var(--nav-height);
+
+
+    transform: var(--transfor-menu-show);
     
+
   }
 
   .nav_item{
@@ -49,7 +117,52 @@ header {
 
   .nav_link{
 
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1rem;
   }
+
+
+
+
+
+  /* MEDIA QUERIE */
+
+  @media (width>800px){
+
+    body{
+      background-color: rgb(152, 217, 255);
+    }
+    .nav__toggle{
+      display: none;
+    }
+    .nav_contenedor{
+      display: flex;
+      --transfor-menu-show:translate(0);
+
+      height: var(--nav-height);
+      margin: 0 16px;
+
+    }
+
+    .nav_lista{
+
+      position: static;
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .nav_link {
+
+      color: var(--second-color);
+    }
+  }
+
+
+
+
+
 
 
   /* -------------------------------- */
@@ -79,3 +192,5 @@ header {
     border-radius: 50px;
     transition: 0.5s;
   } */
+
+
