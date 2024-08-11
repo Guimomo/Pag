@@ -4,19 +4,6 @@
     box-sizing: border-box;
   }
 
-
-  
-  :root {
-    /* los dos puntos representa una pseudo clase */
-  
-    --main-color: #f6e232;
-    --second-color: #2a2929;
-    --third-color: #f2f2f2;
-    --font-zise-main: 18px;
-    --max-width: 1400px;
-  
-    --nav-height: 70px;
-  }
   
   html {
   
@@ -51,50 +38,4 @@
     justify-content: center;
     align-items: center;
   
-  }
-  
-  .vh100 {
-    height: calc(100vh - var(--nav-height));
-  }
-
-  .buttom {
-
-    text-decoration: none;
-    display: inline-block;
-    color: var(--second-color);
-    background-color: var(--main-color);
-    width: 200px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 50px;
-    font-weight: bold;
-  }
-  
-  .buttom:hover {
-  
-    background-color: var(--second-color);
-    color: var(--third-color);
-    transform: scale(1.1);
-    transition: 0.5s;
-  }
-
-  .center {
-    text-align: center;
-  }
-  
-  
-  
-  
-
-  
-  .buttom--active {
-  
-    background-color: var(--second-color);
-    color: var(--third-color);
-  }
-  
-  .buttom--active:hover {
-  
-    background-color: var(--third-color);
-    color: var(--second-color);
   }

@@ -22,7 +22,7 @@ header {
     align-items: center;
     justify-content: space-between;
     --transfor-menu-show: translate(-100%);
-    --icon-togle-menu: url("/assets/icons/close.svg");
+    --icon-togle-menu: url(../assets/icons/open.svg);
 
 
 
@@ -36,7 +36,7 @@ header {
   .nav_contenedor:has(.nav__input:checked){
 
     --transfor-menu-show: translate(0);
-    --icon-togle-menu: url("/assets/icons/close.svg");
+    --icon-togle-menu-close: url(../assets/icons/close.svg);
 
   }
 
@@ -59,7 +59,7 @@ header {
 
     width: 50px;
     height: 50px;
-    background-image: url("/assets/icons/open.svg");
+    background-image: var(--icon-togle-menu);
     background-size: cover;
     cursor: pointer;
     
@@ -67,7 +67,7 @@ header {
 
   .nav__toggle:has(.nav__input:checked){
 
-    background-image: var(--icon-togle-menu);
+    background-image: var(--icon-togle-menu-close);
 
   }
 

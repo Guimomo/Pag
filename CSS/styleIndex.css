@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+@import url(variables.css);
 @import url(config.css);
+@import url(ayuda.css);
 @import url(header.css);
 @import url(Inicio.css);
 @import url(nosotros.css);
