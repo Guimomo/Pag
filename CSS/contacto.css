@@ -31,3 +31,40 @@
     margin: 0 auto;
   }
   
+  .Boton_form button {
+
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+  }
+
+  .Boton_form button:hover {
+  
+    background-color: var(--third-color);
+    color: var(--second-color);
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  @media (width<500px){
+
+
+    .contacto{
+
+      width: 400px;
+      
+    }
+
+    .form {
+
+      width: 400px;
+    }
+
+  }

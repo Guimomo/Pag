@@ -38,4 +38,41 @@
   .card_item--active {
     background-color: var(--main-color);
   }
+
+
+  @media (width<500px){
+
+    #Servicios{
+
+      height: auto;
+    }
+
+    .servicios{
+
+      margin: 5px;
+    }
+
+    .cards{
+
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card_item {
+  
+      max-width: 350px;
+      width: 90%;
+      background-color: var(--third-color);
+      color: var(--second-color);
+      padding: 40px 0;
+
+
+    }
+
+    .card_item--active {
+      background-color: var(--main-color);
+    }
+
+  }
+
   

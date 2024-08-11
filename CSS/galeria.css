@@ -1,15 +1,52 @@
-.Galeria{
-    margin: 0 auto;
+.galeria{
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    box-sizing: border-box;
     
   
   }
   
   .img {
+
+    display: inline-block;
     width: 30%;
   
     border-radius: 10px;
     margin-bottom: 30px;
+  }
+
+  @media (width<500px){
+
+
+    #Galeria{
+
+      height: auto;
+      margin-top: 30px;
+      background-color: var(--main-color);
+    }
+
+    .contenedor_galeria{
+      margin-top: 30px;
+    }
+
+    #Galeria .copy, #Galeria h2{
+
+      color: var(--second-color);
+    }
+
+    .galeria{
+
+      margin-top: 30px;
+    }
+
+    .galeria .img{
+
+      width: 80%;
+      border: solid var(--second-color);
+    }
+
+
+
   }
